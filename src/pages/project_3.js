@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Project from "../components/Projects"
+import Project from "../components/projects"
 import SEO from "../components/seo"
 
 const Project_1 = () => (
