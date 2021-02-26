@@ -6,6 +6,7 @@
  */
 
 import React from "react"
+import PageTransition from 'gatsby-plugin-page-transitions';
 
 import Nav from "./nav"
 import Footer from "./footer"
@@ -17,8 +18,10 @@ const Layout = ({ children }) => {
   return (
     <>
         <Nav />
-
-        <main>{children}</main>
+        
+        <PageTransition>
+          <main>{children}</main>
+        </PageTransition>
 
         <Footer />
     </>
