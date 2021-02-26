@@ -8,6 +8,7 @@
 import React from "react"
 
 import Nav from "./nav"
+import Footer from "./footer"
 import "./styles.scss"
 //import "./layout.css"
 
@@ -16,10 +17,10 @@ const Layout = ({ children }) => {
   return (
     <>
         <Nav />
-      <div className="container">
 
         <main>{children}</main>
-      </div>
+
+        <Footer />
     </>
   )
 }
