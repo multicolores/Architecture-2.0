@@ -2,6 +2,7 @@ import React from "react"
 import "./styles.scss";
 
 import BigImage from "./big_image"
+import Image from "./image"
 import Drag from "./drag"
 
 
@@ -9,7 +10,7 @@ import Drag from "./drag"
 const Project = (props) => {
     return(
         <div className="project">
-            <header>
+            {/* <header>
                 <div className="text_container">
                     <h1>{props.title}</h1>
                     <p>{props.paragraphe}</p>
@@ -19,10 +20,32 @@ const Project = (props) => {
                 <div className="big_image">
                     <BigImage alt="image" filename={props.image_url} />
                 </div>
-            </header>
+            </header> */}
+            <section className="project_header container">
+                    <h1>{props.title}</h1>
+
+                <div className="big_image">
+                    <BigImage alt="image" filename={props.image_url} />
+                </div>
+            </section>
             <div className="big_p" id="a_propos">
-                <h2>A propos</h2>
                 <p>{props.paragraphe2}</p>
+            </div>
+            <div className="gallery imgs_1">
+                    <BigImage alt="image" filename={props.image_url} />
+            </div>
+            <div className="gallery imgs_2">
+                    <Image alt="image" filename={props.image_url} />
+                    <Image alt="image" filename={props.image_url} />
+            </div>
+            <div className="gallery imgs_1">
+                    <BigImage alt="image" filename={props.image_url} />
+            </div>
+            <div className="gallery imgs_4">
+                    <Image alt="image" filename={props.image_url} />
+                    <Image alt="image" filename={props.image_url} />
+                    <Image alt="image" filename={props.image_url} />
+                    <Image alt="image" filename={props.image_url} />
             </div>
 
             <div className="drag_container-projects container">
