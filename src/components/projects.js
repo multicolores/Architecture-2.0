@@ -32,20 +32,20 @@ const Project = (props) => {
                 <p>{props.paragraphe2}</p>
             </div>
             <div className="gallery imgs_1">
-                    <BigImage alt="image" filename={props.image_url} />
+                    <BigImage alt="image" filename={props.image_url_1} />
             </div>
             <div className="gallery imgs_2">
-                    <Image alt="image" filename={props.image_url} />
-                    <Image alt="image" filename={props.image_url} />
+                    <Image alt="image" filename={props.image_url_2} />
+                    <Image alt="image" filename={props.image_url_3} />
             </div>
             <div className="gallery imgs_1">
-                    <BigImage alt="image" filename={props.image_url} />
+                    <BigImage alt="image" filename={props.image_url_4} />
             </div>
             <div className="gallery imgs_4">
-                    <Image alt="image" filename={props.image_url} />
-                    <Image alt="image" filename={props.image_url} />
-                    <Image alt="image" filename={props.image_url} />
-                    <Image alt="image" filename={props.image_url} />
+                    <Image alt="image" filename={props.image_url_2} />
+                    <Image alt="image" filename={props.image_url_5} />
+                    <Image alt="image" filename={props.image_url_3} />
+                    <Image alt="image" filename={props.image_url_1} />
             </div>
 
             <div className="drag_container-projects container">

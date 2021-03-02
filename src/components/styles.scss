@@ -132,15 +132,26 @@ header {
       color: $second_color;
       border-radius: 5px;
       transition: 0.3s;
+      animation: button_anim 1s;
+      display: inline-block;
+      // animation: text_anim 1s;
+      // animation-delay: 0.3s;
+      animation-fill-mode: backwards;
       &:hover {
         background: $second_color;
         color: $primary_color;
       }
     }
     p {
-      margin-top: 1.5em;
+      margin-top: 1em;
       width: 100%;
       margin-bottom: 3em;
+      animation: text_anim 1s;
+      // animation-delay: 0.1s;
+      animation-fill-mode: backwards;
+    }
+    h1 {
+      animation: text_anim 1s;
     }
     @media (max-width: 1330px) {
       h1 {
@@ -501,5 +512,33 @@ footer {
       background: $second_color;
       color: $primary_color;
     }
+  }
+}
+
+//! Animations
+
+@keyframes text_anim {
+  from {
+    transform: translateX(-50%);
+    // opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes button_anim {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
   }
 }
